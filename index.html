@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HeatSafe Texas | Stay ahead of the heat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="wrap nav">
+
+        <a class="logo" href="#home">
+            ☀ HeatSafe<span>TX</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#calculator">Heat checker</a>
+            <a href="#resources">Resources</a>
+            <a href="#safety">Safety</a>
+        </nav>
+
+        <a class="nav-cta" href="#calculator">
+            Check heat →
+        </a>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="wrap hero-grid">
+
+            <div>
+                <div class="eyebrow">
+                    Made for Texas communities
+                </div>
+
+                <h1>
+                    Hot days.<br>
+                    <em>Smarter choices.</em>
+                </h1>
+
+                <p>
+                    Extreme heat can be dangerous.
+                    Get a clearer picture of heat risk,
+                    learn how to protect yourself,
+                    and discover trusted places to look
+                    for local cooling resources.
+                </p>
+
+                <div class="actions">
+
+                    <a class="btn" href="#calculator">
+                        Check your heat risk ↗
+                    </a>
+
+                    <a class="btn secondary" href="#resources">
+                        Find cooling resources
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="sun-art">
+
+                <div class="sun" aria-hidden="true">
+                    ☀️
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+
+            <div class="section-head">
+
+                <div class="kicker">
+                    Why HeatSafe?
+                </div>
+
+                <h2>
+                    One website. More peace of mind.
+                </h2>
+
+                <p class="intro">
+                    We make essential heat-safety
+                    information simple, understandable,
+                    and accessible to everyone.
+                </p>
+
+            </div>
+
+            <div class="three">
+
+                <article class="feature">
+
+                    <div class="symbol">
+                        🌡️
+                    </div>
+
+                    <h3>Understand the heat</h3>
+
+                    <p>
+                        See how humidity changes how hot
+                        the air feels with our interactive
+                        heat-index calculator.
+                    </p>
+
+                </article>
+
+                <article class="feature">
+
+                    <div class="symbol">
+                        📍
+                    </div>
+
+                    <h3>Find local help</h3>
+
+                    <p>
+                        Access official resources for
+                        finding cooling options and heat
+                        assistance in your community.
+                    </p>
+
+                </article>
+
+                <article class="feature">
+
+                    <div class="symbol">
+                        💧
+                    </div>
+
+                    <h3>Stay prepared</h3>
+
+                    <p>
+                        Learn practical precautions and
+                        recognize the warning signs of
+                        heat-related illness.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section soft" id="calculator">
+        <div class="wrap">
+
+            <div class="section-head">
+
+                <div class="kicker">
+                    Interactive tool
+                </div>
+
+                <h2>
+                    How hot does it really feel?
+                </h2>
+
+                <p class="intro">
+                    Adjust the temperature and humidity
+                    to estimate the heat index.
+                    This is a demonstration tool,
+                    not a live weather forecast.
+                </p>
+
+            </div>
+
+            <div class="calc-grid">
+
+                <div class="panel">
+
+                    <h3>Today's scenario</h3>
+
+                    <div class="field">
+
+                        <label for="temp">
+                            Air temperature
+                            <span class="value" id="tempValue">
+                                95°F
+                            </span>
+                        </label>
+
+                        <input
+                            id="temp"
+                            type="range"
+                            min="80"
+                            max="115"
+                            value="95"
+                            step="1"
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="humidity">
+                            Relative humidity
+                            <span class="value" id="humidityValue">
+                                50%
+                            </span>
+                        </label>
+
+                        <input
+                            id="humidity"
+                            type="range"
+                            min="10"
+                            max="90"
+                            value="50"
+                            step="1"
+                        >
+
+                    </div>
+
+                    <p class="notice">
+                        Try changing both sliders to see
+                        how humidity affects the heat index.
+                    </p>
+
+                </div>
+
+                <div class="result" aria-live="polite">
+
+                    <small>Estimated heat index</small>
+
+                    <div class="big" id="heatIndex">
+                        105°F
+                    </div>
+
+                    <div class="risk" id="riskLevel">
+                        Danger
+                    </div>
+
+                    <p id="riskAdvice">
+                        High heat can increase the risk
+                        of heat illness. Take precautions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p class="notice">
+                Based on the NOAA/National Weather Service
+                heat-index approximation.
+                The index is calculated for shade and
+                light wind; direct sun can make conditions
+                feel hotter. Heat index alone cannot
+                determine an individual's medical risk.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="section" id="resources">
+        <div class="wrap">
+
+            <div class="section-head">
+
+                <div class="kicker">
+                    Community connections
+                </div>
+
+                <h2>
+                    Find a place to cool down.
+                </h2>
+
+                <p class="intro">
+                    Cooling centers can open temporarily
+                    during extreme weather.
+                    Use these official sources to check
+                    current information before traveling.
+                </p>
+
+            </div>
+
+            <div class="resource-grid">
+
+                <article class="resource">
+
+                    <div class="icon">
+                        🏙️
+                    </div>
+
+                    <h3>City of Austin</h3>
+
+                    <p>
+                        Check the city's official website
+                        for heat alerts, public facilities,
+                        and emergency cooling announcements.
+                    </p>
+
+                    <a href="https://www.austintexas.gov/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Official city website ↗
+                    </a>
+
+                </article>
+
+                <article class="resource">
+
+                    <div class="icon">
+                        📚
+                    </div>
+
+                    <h3>Austin Public Library</h3>
+
+                    <p>
+                        Find library branches and confirm
+                        their current operating hours.
+                        A library is not automatically
+                        an emergency cooling center.
+                    </p>
+
+                    <a href="https://library.austintexas.gov/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Find a library ↗
+                    </a>
+
+                </article>
+
+                <article class="resource">
+
+                    <div class="icon">
+                        🗺️
+                    </div>
+
+                    <h3>2-1-1 Texas</h3>
+
+                    <p>
+                        Search for community support
+                        services and local assistance
+                        resources.
+                        Call 2-1-1 where available.
+                    </p>
+
+                    <a href="https://www.211texas.org/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Explore resources ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+            <div class="disclaimer">
+                ⚠️ These links are resource directories,
+                not a verified list of open cooling centers.
+                Always confirm availability, eligibility,
+                hours, and transportation before heading out.
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section soft" id="safety">
+        <div class="wrap">
+
+            <div class="section-head">
+
+                <div class="kicker">
+                    Heat safety guide
+                </div>
+
+                <h2>
+                    Small actions. Big protection.
+                </h2>
+
+                <p class="intro">
+                    Simple precautions can help reduce
+                    the risk of heat-related illness.
+                </p>
+
+            </div>
+
+            <div class="tips-grid">
+
+                <article class="tip">
+
+                    <div class="emoji">
+                        💧
+                    </div>
+
+                    <div>
+                        <h3>Drink water regularly</h3>
+
+                        <p>
+                            Stay hydrated throughout the day,
+                            especially during physical activity.
+                            Follow any fluid restrictions
+                            given by your clinician.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="tip">
+
+                    <div class="emoji">
+                        🌳
+                    </div>
+
+                    <div>
+                        <h3>Take cooling breaks</h3>
+
+                        <p>
+                            Rest in shade or air-conditioned
+                            spaces and reduce strenuous
+                            activity during the hottest hours.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="tip">
+
+                    <div class="emoji">
+                        👕
+                    </div>
+
+                    <div>
+                        <h3>Dress for the weather</h3>
+
+                        <p>
+                            Wear lightweight, loose-fitting
+                            clothing and use sun protection
+                            when outdoors.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="tip">
+
+                    <div class="emoji">
+                        🤝
+                    </div>
+
+                    <div>
+                        <h3>Check on others</h3>
+
+                        <p>
+                            Older adults, young children,
+                            outdoor workers, and people with
+                            certain health conditions may
+                            need extra support.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="emergency">
+
+                <strong>
+                    🚨 Know the warning signs.
+                </strong>
+
+                Heat exhaustion may cause heavy sweating,
+                weakness, dizziness, or nausea.
+                Move to a cooler place and seek medical
+                advice if symptoms worsen or do not improve.
+
+                <strong>
+                    Confusion, fainting, seizures, or very
+                    high body temperature may signal
+                    heatstroke: call 911 immediately.
+                </strong>
+
+                Begin cooling the person while waiting
+                for help.
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="wrap foot-flex">
+
+        <div>
+
+            <div class="logo">
+                ☀ HeatSafe<span>TX</span>
+            </div>
+
+            <p>
+                Stay cool. Stay safe. Stay informed.
+                <br>
+                Student prototype for WarriorHacks 2.0.
+            </p>
+
+        </div>
+
+        <p>
+            Educational information only
+            · Not an emergency alert service
+            <br>
+            Sources: NOAA/NWS, City of Austin,
+            Austin Public Library, 2-1-1 Texas
+        </p>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
